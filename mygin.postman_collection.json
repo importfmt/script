@@ -1,0 +1,2034 @@
+{
+	"info": {
+		"_postman_id": "3936e549-8c64-4070-85c0-6ad2c045d5ff",
+		"name": "mygin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users/:userID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users?pagenum=1&pagesize=10&query=&status=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "pagenum",
+									"value": "1"
+								},
+								{
+									"key": "pagesize",
+									"value": "10"
+								},
+								{
+									"key": "query",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/cars",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/47/cars",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"47",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/day",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIzNjQxMCwiaWF0IjoxNjA2OTc3MjEwLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.Qc_zKxwtNL4mFzhNsoe88NeQE5KLeXS_pdQaJUrpNk4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/2/day",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2",
+								"day"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjI4LCJleHAiOjE1OTQ0NDY0NjIsImlhdCI6MTU5NDE4NzI2MiwiaXNzIjoibXlnaW4uY29tIiwic3ViIjoidXNlciB0b2tlbiJ9.x1shfjBXVKykFay_tKqK0QTju2LgN9FRElHZHRvTPFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/cars",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjI4LCJleHAiOjE1OTQ0NDY0NjIsImlhdCI6MTU5NDE4NzI2MiwiaXNzIjoibXlnaW4uY29tIiwic3ViIjoidXNlciB0b2tlbiJ9.x1shfjBXVKykFay_tKqK0QTju2LgN9FRElHZHRvTPFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/cars",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzE3MzgxNywiaWF0IjoxNTkyOTE0NjE3LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.JhMfiiw6C9JE5PDrW-F3I022c-Yzb00IthY_Ha5j3vw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\": \"13331233323\",\r\n    \"email\": \"1123226535@qq.com\",\r\n    \"city\": \"福建省\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjI4LCJleHAiOjE1OTM1MDIxMzIsImlhdCI6MTU5MzI0MjkzMiwiaXNzIjoibXlnaW4uY29tIiwic3ViIjoidXNlciB0b2tlbiJ9.cGB9lyMVcjLacfargO6ZKF9kpriDa9qRTAUGyDbLgyI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": false\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/2/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\": \"超级管理员\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/28/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"28",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/recover",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/28/recover",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"28",
+								"recover"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIzNjQxMCwiaWF0IjoxNjA2OTc3MjEwLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.Qc_zKxwtNL4mFzhNsoe88NeQE5KLeXS_pdQaJUrpNk4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/email",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/mobile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/mobile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/city",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/mobile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/:userID/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIzNjQxMCwiaWF0IjoxNjA2OTc3MjEwLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.Qc_zKxwtNL4mFzhNsoe88NeQE5KLeXS_pdQaJUrpNk4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"111111\",\r\n    \"newPassword\": \"000000\",\r\n    \"verifyPassword\": \"000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/users/1/password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "cars",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NDQ1MjI5MywiaWF0IjoxNTk0MTkzMDkzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.51SgpXHI8T9Eq8SslHrO_K8fUe7hwQKZWphhEn8z5uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"brand\": \"bmw\",\r\n    \"license\": \"闽C13198\",\r\n    \"deadweight\": 100\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"license\": \"闽A82488\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars?pagenum=1&pagesize=10&status=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							],
+							"query": [
+								{
+									"key": "pagenum",
+									"value": "1"
+								},
+								{
+									"key": "pagesize",
+									"value": "10"
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/1/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID/orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzIzNjk1OSwiaWF0IjoxNTkyOTc3NzU5LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.d1Yl8p93mS4du9ZUi5KsO_s5ptf4SunjEQbENC4G6HY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"license\": \"闽A84998\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Benz\",\r\n    \"license\": \"京A66188\",\r\n    \"deadweight\": 200\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID/recover",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0Nzg3NSwiaWF0IjoxNTk2NDg4Njc1LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.mfyXzYuin39p-vKE1OMItyFI4DL-Ms6Dv_TQqQwkD3s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/6/recover",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"6",
+								"recover"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars/:carID/status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": false\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/cars/8/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"8",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "goods",
+			"item": [
+				{
+					"name": "goods",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Apple iphone 11\",\r\n    \"price\": 5000,\r\n    \"weight\": 4,\r\n    \"fromcity\": \"福建省福州市\",\r\n    \"tocity\": \"上海市\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYxOTUwMzYyNywiaWF0IjoxNjE5MjQ0NDI3LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.Vtzf8ZrQ4eJZVI_0ZxFWYgQfyyYxERCpJcBPSzL2wGQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods?pagenum=1&pagesize=10&query=&status=deleted&category=all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods"
+							],
+							"query": [
+								{
+									"key": "pagenum",
+									"value": "1"
+								},
+								{
+									"key": "pagesize",
+									"value": "10"
+								},
+								{
+									"key": "query",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": "deleted"
+								},
+								{
+									"key": "category",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodsID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodsID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodsID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"苹果\",\r\n    \"price\": 1,\r\n    \"weight\": 1,\r\n    \"fromcity\": \"福建省漳州市\",\r\n    \"tocity\": \"北京市\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodID/recover",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/6/recover",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"6",
+								"recover"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodsID/status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": false\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/2/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goods/:goodID/courierstatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc1MjEzNCwiaWF0IjoxNTk2NDkyOTM0LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.QDt798hVgGd5KX0JOZFW4aCAtfsrFZ2aRcrgbIqW-Cg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courierstatus\"： true\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/goods/5/courierstatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"goods",
+								"5",
+								"courierstatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "roles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NDk2MDQ1MywiaWF0IjoxNTk0NzAxMjUzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.xoUBJzkpvKtOiWRVAKab4MwzdSIQjlSfNAiTamzqtDM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/roles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NDk2MDQ1MywiaWF0IjoxNTk0NzAxMjUzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.xoUBJzkpvKtOiWRVAKab4MwzdSIQjlSfNAiTamzqtDM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carrieruserid\": 2,\r\n    \"carriercarid\": 2,\r\n    \"goodsid\": 2\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders?pagenum=1&pagesize=10&status=deleted",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "pagenum",
+									"value": "1"
+								},
+								{
+									"key": "pagesize",
+									"value": "10"
+								},
+								{
+									"key": "status",
+									"value": "deleted"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"nViuXIDYGLtqfCjZNPdl\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carrieruserid\": 1,\r\n    \"carriercarid\": 1,\r\n    \"goodsid\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID/status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsImV4cCI6MTU5MzI0NzQxOCwiaWF0IjoxNTkyOTg4MjE4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.uK0DlzUFIs8TFYLolnmjWFdcL1uEhwK1433b2YEWLSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/4/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"4",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders:/:orderID/courierstatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courierstatus\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/4/courierstatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"4",
+								"courierstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID/paymentstatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/4/paymentstatus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"4",
+								"paymentstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders/:orderID/recover",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5Njc0ODQ0MiwiaWF0IjoxNTk2NDg5MjQyLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.2-qkqIiQ_JVhtTZX53Y3X9Z3STI-K8a-OdQQFvARaYo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/orders/6/recover",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"6",
+								"recover"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "common",
+			"item": [
+				{
+					"name": "menus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIyNzYzOCwiaWF0IjoxNjA2OTY4NDM4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.0oqVTq07u4Ss-t_i8nvnphxerYAzFJXqnGRU4NJ5z_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/menus/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"menus",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\": \"18150620697\",\r\n    \"password\": \"111111\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"wengweng\",\r\n    \"mobile\": \"15111111111\",\r\n    \"email\": \"15111111111@189.com\",\r\n    \"password\": \"000000\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "menus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIyNzYzOCwiaWF0IjoxNjA2OTY4NDM4LCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.0oqVTq07u4Ss-t_i8nvnphxerYAzFJXqnGRU4NJ5z_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/menus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"menus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTYwNzIzNjQxMCwiaWF0IjoxNjA2OTc3MjEwLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.Qc_zKxwtNL4mFzhNsoe88NeQE5KLeXS_pdQaJUrpNk4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/info",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "wips",
+			"item": [
+				{
+					"name": "wips",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NzIyMTMyMywiaWF0IjoxNTk2OTYyMTIzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.f5OGXhNIH3hHcl8GpkLL8qTX4uFaI-8Hlnmcs30YYRg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/wips?pagenum=1&pagesize=10&query=&value=all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"wips"
+							],
+							"query": [
+								{
+									"key": "pagenum",
+									"value": "1"
+								},
+								{
+									"key": "pagesize",
+									"value": "10"
+								},
+								{
+									"key": "query",
+									"value": ""
+								},
+								{
+									"key": "value",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wips",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NzIyMTMyMywiaWF0IjoxNTk2OTYyMTIzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.f5OGXhNIH3hHcl8GpkLL8qTX4uFaI-8Hlnmcs30YYRg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"222\",\r\n    \"desc\": \"2222\",\r\n    \"username\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/wips",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"wips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wips/:wipID/reply",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjIsImV4cCI6MTU5NzIyMTMyMywiaWF0IjoxNTk2OTYyMTIzLCJpc3MiOiJteWdpbi5jb20iLCJzdWIiOiJ1c2VyIHRva2VuIn0.f5OGXhNIH3hHcl8GpkLL8qTX4uFaI-8Hlnmcs30YYRg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reply\": \"11asasas1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8888/api/v1/wips/3/reply",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8888",
+							"path": [
+								"api",
+								"v1",
+								"wips",
+								"3",
+								"reply"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
