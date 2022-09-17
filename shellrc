@@ -3,12 +3,15 @@
 #export https_proxy="https://127.0.0.1:7890"
 
 # dev xonfiguration.
-export PYTHON_HOME="/Users/wengy/Library/Python/3.8/bin"
-export GOPATH="/Users/wengy/iCloud/Code\ Library/go"
-export PATH="$PYTHON_HOME:$GOPATH:$PATH"
+# export PYTHON_HOME="/Users/wengy/Library/Python/3.8/bin"
+# export GOPATH="/Users/wengy/iCloud/Code\ Library/go"
+# export PATH="$PYTHON_HOME:$GOPATH:$PATH"
 
 # alias configuration.
 alias ll="ls -l"
 alias l="ls -l"
 alias la="ls -al"
-alias python="/usr/bin/python3"
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+# alias python="/usr/bin/python3"
