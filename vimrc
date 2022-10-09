@@ -1,8 +1,8 @@
-syntax off
+syntax on
 filetype on
 filetype plugin on
 set background=dark
-set nonumber
+set number
 set showmode
 set showcmd
 set noswapfile
@@ -25,7 +25,7 @@ set shiftwidth=8
 set shiftround
 set smartindent
 set backspace=indent,eol,start
+set statusline+=%f
 
 " set mapping
 inoremap jj <Esc>
-
