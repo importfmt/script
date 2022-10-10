@@ -1,7 +1,4 @@
 # dev configuration.
-# export PYTHON_HOME="/Users/wengy/Library/Python/3.8/bin"
-# export PATH="$PYTHON_HOME:$PATH"
-
 export GOPATH="/root/go"
 export GOBIN="/root/go/bin"
 export GO111MODULE=on
@@ -21,7 +18,7 @@ alias pip="/usr/bin/pip3.9"
 # system configuration.
 export PS1="\[\e[31m\][\u@\h \w]\\$\[\e[m\] "
 set bell-style none
-# export http_proxy="http://172.29.248.135:7890"
-# export https_proxy="http://172.29.248.135:7890"
-# export all_proxy="socks5://172.29.248.135:7890"
-# export ALL_PROXY="socks5://172.29.248.135:7890"
+export http_proxy="http://172.29.248.135:7890"
+export https_proxy="http://172.29.248.135:7890"
+export all_proxy="socks5://172.29.248.135:7890"
+export ALL_PROXY="socks5://172.29.248.135:7890"
